@@ -1,0 +1,197 @@
+:root {
+    /* Theme 1 */
+    --bs-mainbackground: hsl(222, 26%, 31%);
+    --bs-togglekeypadbackground : hsl(223, 31%, 20%);
+    --bs-screenbackground: hsl(224, 36%, 15%);
+    --bs-cardBG: hsl(216, 50%, 16%);
+    
+
+    /* Keys */
+
+    --bs-blueKeyBackground: hsl(225, 21%, 49%);
+    --bs-blueKeyShadow: hsl(224, 28%, 35%);
+    --bs-keyBackgroundToggle: hsl(6, 63%, 50%);
+    --bs-keyShadow: hsl(6, 70%, 34%);
+    --bs-keybackground: hsl(30, 25%, 89%);
+    --bs-keyshadow: hsl(28, 16%, 65%);
+    
+     /* Text */
+    
+     --bs-Verydarkgrayishblue: hsl(221, 14%, 31%);
+     --bs-White: hsl(0, 0, 100%);
+
+    }
+    
+
+    *,
+    *::after,
+    ::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 90vh;
+        font-family: 'League Spartan', sans-serif;
+        background-color:var(--bs-mainbackground);
+        margin: 2rem 1rem;
+        font-weight: 700;
+    }
+
+
+h1{
+   color:var(--bs-keybackground);
+}
+
+p{
+    font-size: 0.7rem;
+    color: var(--bs-keybackground);
+    margin-right: 1.5rem;
+}
+
+
+.span {
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    font-size: 0.7rem;
+}
+
+.card{
+    border: none;
+}
+
+    .card-body{
+        padding: 2rem 1rem;
+        background-color:var(--bs-mainbackground);
+      
+    }
+
+.top{
+    margin-bottom: 1rem;
+}
+
+    .input{
+        grid-column: 1 / -1;
+        display: grid;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+        height: 90px;
+        border-radius: 10px;
+        border: none;
+        background-color: var(--bs-screenbackground);
+    color:var(--bs-keybackground);
+   font-size: 2.5rem;
+    text-align: end;
+    overflow: hidden;
+        
+    }
+
+
+    .container-sm{
+        display: grid;
+        border-radius: 10px;
+        margin-top: 1rem;
+        height: 70%;
+       padding: 1rem;
+       background-color: var(--bs-togglekeypadbackground);
+    }
+
+    .row {
+        padding: 0 0.5rem;
+        column-gap: 3px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn{
+        display: grid;
+align-content: center;
+padding: 0;
+height: 50px;
+font-weight: 700;
+font-size: 1.6rem;
+margin: 0.2rem;
+background-color:var(--bs-keybackground);
+color: var(--bs-Verydarkgrayishblue);
+    }
+
+
+  .col-5{
+width: 124px;
+display: grid;
+align-content: center;
+  }
+
+  .row-cols-2{
+    display: flex;
+  }
+
+    .btn-lg{
+        border-radius: 10px;
+        width: 100%;
+        height: 60px;
+        background-color: blue;
+        display: grid;
+    align-content: center;
+}
+    
+
+.del-reset, .data-delete{
+    background-color:var(--bs-blueKeyBackground);
+    color:var(--bs-keybackground);
+}
+
+.red-btn{
+    background-color: var(--bs-keyBackgroundToggle);
+    color:var(--bs-keybackground);
+
+}
+
+
+
+
+   .toggle {
+    width: 56px;
+    height: 22px;
+    border-radius: 20px;
+    float: left;
+    background: #242729;
+}
+
+
+ .toggle input {
+   position: absolute;
+   opacity: 0;
+   /* cursor: pointer; */
+ }
+ .toggle input + label {
+   padding: 7px;
+   color: #fff;
+   
+ }
+ .toggle input:checked + label {
+  background-color: var(--bs-keyBackgroundToggle);
+   border-radius: 20px;
+position: relative;
+bottom: -3px;
+left: -3px;
+ }
+
+ .theme{
+    align-items: baseline;
+    text-align: end;
+ }

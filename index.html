@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <main class="container">
+
+    <div class="card container" style="width: 20rem;  padding:0;">
+     
+      <div class="card-body ">
+        <div class="d-flex top align-items-baseline justify-content-between">
+          <h1>Calc</h1>
+          
+
+<div class="theme d-flex">
+          <p >THEME</p>
+
+          
+          <div class="toggle">    
+            
+            <span class="span" >1</span>
+            <input class="theme1" type="radio" name="theme" value="0"  checked="checked">
+            <label for="theme1"></label>
+
+      <span class="span" >2</span>
+            <input class="theme2" type="radio" value="1" name="theme" >
+            <label for="theme2"></label>
+                     
+            <span class="span" >3</span>
+            <input class="theme3" type="radio" value="2" name="theme">
+            <label for="theme3"></label>
+           
+          </div>
+
+        </div>
+            </div>
+  
+            
+            <div class="input" type="text" name="input">
+              <div data-previous-operand class="previous-operand"></div>
+              <div data-current-operand class="current-operand"></div>
+            </div>
+            <div class="container-sm box">
+              <div class="row">
+                <div  class="col btn" >7</div>
+                <div  class="col btn" >8</div>
+                <div  class="col btn" >9</div>    
+                <div class="col btn  data-delete" >  Del </div>
+              </div>
+
+              <div class="row">
+                <div  class="col btn" >4</div>
+                <div  class="col btn" >5</div>
+                <div  class="col btn" >6</div>
+                <div class="col btn plus" > + </div>
+              </div>
+      
+
+              <div class="row">
+                <div  class="col btn" >1</div>
+                <div  class="col btn" >2</div>
+                <div  class="col btn" >3</div>
+                <div class="col btn minus" > - </div>
+              </div>
+      
+              <div class="row">
+                <div class="col btn" > . </div>
+                <div class="col btn" > 0 </div>
+
+                <div class="col btn divide"  > / </div>
+                <div class="col btn multiply" > x </div>
+              </div>
+      
+              <div class="row-cols-2 " style="text-align:center;">
+                <div class="col-5 btn del-reset">RESET</div>
+                <div class="col-5 btn red-btn equal"  >=</div>
+              </div>
+      
+      
+            </div>
+          </div>
+       
+      </div>
+    </div>
+
+  </main>
+  <script src="app.js"></script>
+  <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+
+  
+</body>
+</html>
+
