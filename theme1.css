@@ -1,23 +1,25 @@
+
 :root {
     /* Theme 1 */
-    --bs-mainbackground: hsl(222, 26%, 31%);
-    --bs-togglekeypadbackground : hsl(223, 31%, 20%);
-    --bs-screenbackground: hsl(224, 36%, 15%);
-    --bs-cardBG: hsl(216, 50%, 16%);
+    --bs-mainbackground: hsl(0, 0%, 90%);
+    --bs-togglekeypadbackground : hsl(0, 5%, 81%);
+    --bs-screenbackground: hsl(0, 0%, 93%);
+    /* --bs-cardBG: hsl(216, 50%, 16%); */
     
-
     /* Keys */
 
-    --bs-blueKeyBackground: hsl(225, 21%, 49%);
-    --bs-blueKeyShadow: hsl(224, 28%, 35%);
-    --bs-keyBackgroundToggle: hsl(6, 63%, 50%);
-    --bs-keyShadow: hsl(6, 70%, 34%);
-    --bs-keybackground: hsl(30, 25%, 89%);
-    --bs-keyshadow: rgb(180, 165, 151);
+    --bs-KeyBackground: hsl(185, 42%, 37%);
+    --bs-KeyShadow: hsl(185, 58%, 25%);
+    --bs-keyBackgroundToggle:hsl(25, 98%, 40%);
+    --bs-orangekeyShadow:hsl(25, 99%, 27%);
+    --bs-keybackground:hsl(45, 7%, 89%);
+    --bs-keyyshadow: hsl(35, 11%, 61%);
     
+
+
      /* Text */
     
-     --bs-Verydarkgrayishblue: hsl(221, 14%, 31%);
+     --bs-Verydarkgrayishblue:hsl(60, 10%, 19%) ;
      --bs-White: hsl(0, 0, 100%);
 
     }
@@ -52,12 +54,12 @@
 
 
 h1{
-   color:var(--bs-keybackground);
+   color:var(--bs-Verydarkgrayishblue);
 }
 
 p{
     font-size: 0.7rem;
-    color: var(--bs-keybackground);
+    color:var(--bs-Verydarkgrayishblue);
     margin-right: 1.5rem;
 }
 
@@ -68,7 +70,7 @@ p{
 }
 
 .span {
-    color: #fff;
+    color:var(--bs-Verydarkgrayishblue);
     position: absolute;
     top: 25px;
     font-size: 0.7rem;
@@ -98,7 +100,7 @@ p{
         border-radius: 10px;
         border: none;
         background-color: var(--bs-screenbackground);
-    color:var(--bs-keybackground);
+    color:var(--bs-Verydarkgrayishblue);
    font-size: 2.5rem;
     text-align: end;
     overflow: hidden;
@@ -129,23 +131,23 @@ align-content: center;
 padding: 0;
 height: 55px;
 font-weight: 700;
-font-size: 1.7rem;
+font-size: 1.6rem;
 margin: 0.2rem;
 background-color:var(--bs-keybackground);
 color: var(--bs-Verydarkgrayishblue);
-box-shadow: 0px -3px 1px 0px  inset var(--bs-keyshadow);
+box-shadow: 0px -3px 1px 0px  inset var(--bs-keyyshadow);
 
 
     }
 
+    .col-5{
+        width: 124px;
+        height: 57px;
+        display: grid;
+        align-content: center;
+        font-size: 20px;
+          }
 
-  .col-5{
-width: 124px;
-height: 57px;
-display: grid;
-align-content: center;
-font-size: 20px;
-  }
 
   .row-cols-2{
     display: flex;
@@ -162,15 +164,15 @@ font-size: 20px;
     
 
 .del-reset, .data-delete{
-    background-color:var(--bs-blueKeyBackground);
-    color:var(--bs-keybackground);
-    box-shadow: 0px -3px 1px 0px  inset var(--bs-blueKeyShadow);
+background-color: var(--bs-KeyBackground);
+color: var(--bs-keybackground);
+box-shadow: 0px -3px 1px 0px  inset var(--bs-KeyShadow);
 }
 
 .red-btn{
     background-color: var(--bs-keyBackgroundToggle);
     color:var(--bs-keybackground);
-    box-shadow: 0px -3px 1px 0px  inset var(--bs-keyShadow);
+    box-shadow: 0px -3px 1px 0px  inset var(--bs-orangekeyShadow);
 }
 
 
@@ -181,7 +183,7 @@ font-size: 20px;
     height: 22px;
     border-radius: 20px;
     float: left;
-    background: #242729;
+    background-color: var(--bs-togglekeypadbackground);
 }
 
 
@@ -189,13 +191,11 @@ font-size: 20px;
    position: absolute;
    opacity: 0;
    top: 45px;
-  
-   
  }
  .toggle input + label {
    padding: 7px;
    color: #fff;
- 
+   
  }
  .toggle input:checked + label {
   background-color: var(--bs-keyBackgroundToggle);
@@ -210,7 +210,3 @@ left: -3px;
     text-align: end;
  }
 
-
- .theme-2{
-    
- }

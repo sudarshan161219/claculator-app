@@ -1,14 +1,8 @@
 const button =  document.querySelectorAll('.btn');
 let input = document.querySelector('.input');
-
-
-
-
-
-
-  
-  
-
+const theme1 = document.querySelector('.theme1');
+const theme2 = document.querySelector('.theme2');
+const theme3 = document.querySelector('.theme3');
 
 
 
@@ -59,3 +53,23 @@ function addINComma() {
 
 }
 
+theme1.addEventListener('click', function(){
+  if(value = '0'){
+    document.getElementById("css").href="styles.css";
+  }
+})
+
+theme2.addEventListener('click', function(){
+  if(value = '1'){
+    document.getElementById("css").href="theme1.css";
+  }
+
+})
+
+
+theme3.addEventListener('click', function(){
+  if(value = '2'){
+    document.getElementById("css").href="theme2.css";
+
+  }
+})
